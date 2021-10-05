@@ -47,7 +47,7 @@ def cf_mail_decoder(url):
     """
     主要功能
     将cloudflare加密后的电子邮件地址还原
-    返回response
+    返回response.text
     """
     response = get(url)
     response_text = response.text
